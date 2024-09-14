@@ -1,0 +1,485 @@
+{
+	"info": {
+		"_postman_id": "b7131d01-68d6-4375-a13d-2bfb41281e48",
+		"name": "Movie Ticket Booking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2220183",
+		"_collection_link": "https://red-water-769723.postman.co/workspace/Reconomy~9de088d4-125d-4907-bbb0-6893cda0b734/collection/2220183-b7131d01-68d6-4375-a13d-2bfb41281e48?action=share&source=collection_link&creator=2220183"
+	},
+	"item": [
+		{
+			"name": "Movie Operations",
+			"item": [
+				{
+					"name": "Add a new movie",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Batman 2\",\r\n    \"description\": \"A movie about ficional DC charecter Batman (Sequel)\",\r\n    \"genre\":\"Super hero\",\r\n    \"duration\" :\"2.5 hrs\",\r\n    \"rating\": \"8.5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/movie",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"movie"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all movies",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Batman 2\",\r\n    \"description\": \"A movie about ficional DC charecter Batman (Sequel)\",\r\n    \"genre\":\"Super hero\",\r\n    \"duration\" :\"2.5 hrs\",\r\n    \"rating\": \"8.5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/movies",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"movies"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get movie by ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Batman 2\",\r\n    \"description\": \"A movie about ficional DC charecter Batman (Sequel)\",\r\n    \"genre\":\"Super hero\",\r\n    \"duration\" :\"2.5 hrs\",\r\n    \"rating\": \"8.5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/movies/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"movies",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update movie",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Batman 2\",\r\n    \"description\": \"A movie about ficional DC charecter Batman (Sequel)\",\r\n    \"genre\":\"Super hero\",\r\n    \"duration\" :\"2.5 hrs\",\r\n    \"rating\": \"8.0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/movies/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"movies",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete movie",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Batman 2\",\r\n    \"description\": \"A movie about ficional DC charecter Batman (Sequel)\",\r\n    \"genre\":\"Super hero\",\r\n    \"duration\" :\"2.5 hrs\",\r\n    \"rating\": \"8.0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/movies/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"movies",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Theater Operations",
+			"item": [
+				{
+					"name": "Add a new theater",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"theater 1\",\r\n    \"location\": \"Delhi\",\r\n    \"capacity\":\"200\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/theater",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"theater"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all theaters",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Batman 2\",\r\n    \"description\": \"A movie about ficional DC charecter Batman (Sequel)\",\r\n    \"genre\":\"Super hero\",\r\n    \"duration\" :\"2.5 hrs\",\r\n    \"rating\": \"8.5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/theaters",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"theaters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get theater by ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Batman 2\",\r\n    \"description\": \"A movie about ficional DC charecter Batman (Sequel)\",\r\n    \"genre\":\"Super hero\",\r\n    \"duration\" :\"2.5 hrs\",\r\n    \"rating\": \"8.5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/theaters/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"theaters",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update theater",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Batman 2\",\r\n    \"description\": \"A movie about ficional DC charecter Batman (Sequel)\",\r\n    \"genre\":\"Super hero\",\r\n    \"duration\" :\"2.5 hrs\",\r\n    \"rating\": \"8.0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/theaters/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"theaters",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete movie",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/theaters/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"theaters",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Showtime Operations",
+			"item": [
+				{
+					"name": "Add a new Showtime",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"theater 1\",\r\n    \"location\": \"Delhi\",\r\n    \"capacity\":\"200\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/theater",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"theater"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all theaters",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Batman 2\",\r\n    \"description\": \"A movie about ficional DC charecter Batman (Sequel)\",\r\n    \"genre\":\"Super hero\",\r\n    \"duration\" :\"2.5 hrs\",\r\n    \"rating\": \"8.5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/theaters",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"theaters"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get theater by ID",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Batman 2\",\r\n    \"description\": \"A movie about ficional DC charecter Batman (Sequel)\",\r\n    \"genre\":\"Super hero\",\r\n    \"duration\" :\"2.5 hrs\",\r\n    \"rating\": \"8.5\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/theaters/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"theaters",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update theater",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Batman 2\",\r\n    \"description\": \"A movie about ficional DC charecter Batman (Sequel)\",\r\n    \"genre\":\"Super hero\",\r\n    \"duration\" :\"2.5 hrs\",\r\n    \"rating\": \"8.0\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/theaters/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"theaters",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete movie",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/theaters/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"theaters",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
